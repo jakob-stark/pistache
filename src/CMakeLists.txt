@@ -82,3 +82,6 @@ endif ()
 set_target_properties(pistache_static PROPERTIES
     OUTPUT_NAME ${PROJECT_NAME}
 )
+
+install(TARGETS pistache_shared pistache_static DESTINATION lib)
+install(FILES ${INCLUDE_FILES} DESTINATION include/pistache)
